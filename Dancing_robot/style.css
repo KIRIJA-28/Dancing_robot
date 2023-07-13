@@ -1,0 +1,457 @@
+body{
+    background:black;
+    
+}
+h1{
+    color:green;
+    text-align: center;
+}
+#container{
+    height:500px;
+    width:1100px;
+    border:2px solid green;
+    margin:auto;
+
+}
+#face{
+    height:140px;
+    width:150px;
+    background:rgb(128, 0, 75);
+    border-top-left-radius:50%;
+    border-top-right-radius:50% ;
+    margin:auto;
+    margin-top:3%;
+    transition:width 2s ease;
+}
+#container:hover #face{
+    
+    animation: face 1s infinite;
+}
+@keyframes face{
+    0%{
+        transform:translatex(20px);
+    }
+    25%{
+        transform:translatex(-20px);
+        
+    }
+    50%{
+        transform:translatex(20px);
+        
+    }
+    75%{
+        transform:translatex(-20px);
+    }
+    100%{
+        transform:translatex(20px);
+    }
+}
+#eye{
+    display:flex;
+    width:150px;
+    justify-content:space-evenly;
+    padding-top:80px;
+}
+#leye{
+    height:30px;
+    width:30px;
+    background:red;
+    border-radius:30%;
+}
+#leye{
+    height:30px;
+    width:30px;
+    background:red;
+    border-radius:30%;
+}
+#container:hover #leye{
+    animation:leye 2s infinite;
+}
+@keyframes leye{
+    0%{
+      height: 0px;
+      background: red;
+    }
+    25%{
+       height:30px;
+       background: red;
+    }
+    50%{
+     height: 0px;
+     background:red;
+    }
+    75%
+    {
+      height:30px;
+      background: red;
+    }
+    100%{
+      height:0px;
+      background: red;
+    }
+}
+#body{
+    display:flex;
+    width:250px;
+    justify-content:space-evenly ;
+    margin:auto;
+    
+}
+#lhand{
+    height:85px;
+    width:23px;
+    background:green;
+    margin-top:45% ;
+    border-radius:45% ;
+}
+#container:hover #lhand{
+    transform:translatex(20px);
+    animation: lhand 1s infinite;
+}
+@keyframes lhand{
+    0%{
+        transform-origin: top center;
+        transform:rotate(0deg);
+        background: violet;
+    }
+    25%{
+        transform:rotate(180deg);
+        transform-origin: top center;
+        background:gray;
+        
+    }
+    50%{
+        transform:rotate(0deg);
+        transform-origin: top center;
+        background: orange;
+        
+    }
+    75%{
+        transform:rotate(180deg);
+        transform-origin: top center;
+        background:yellow;
+    }
+    100%{
+        transform:rotate(0deg);
+        transform-origin: top center;
+        background: hotpink;
+    }
+}
+#center{
+    height:160px;
+    width:150px;
+    background:green;
+    margin:auto;
+    border-bottom-left-radius:10% ;
+    border-bottom-right-radius:10% ;
+    
+
+}
+#rhand{
+    height:85px;
+    width:23px;
+    background:green;
+    margin-top:45%;
+    border-radius:45% ;
+}
+#container:hover #rhand{
+    transform:translatex(20px);
+    animation: rhand 1s infinite;
+}
+@keyframes rhand{
+    0%{
+        transform:rotate(0deg);
+        transform-origin: top center;
+        background: violet;
+        
+    }
+    25%{
+        transform:rotate(180deg);
+        transform-origin: top center;
+        background: grey;
+    }
+    50%{
+        transform:rotate(0deg);
+        transform-origin: top center;
+        background: orange;
+    }
+    75%{
+        transform:rotate(180deg);
+        transform-origin: top center;
+        background:yellow;
+    }
+    100%{
+        transform:rotate(0deg);
+        transform-origin: top center;
+        background: hotpink;
+    }
+}
+#leg{
+    display:flex;
+    width:150px;
+    justify-content:space-evenly;
+    margin:auto;
+    margin-top:10px;
+}
+#lleg{
+    height:85px;
+    width:25px;
+    background:green;
+    margin:auto;
+    border-bottom-left-radius:90% ;
+    border-bottom-right-radius:90% ;
+    
+}
+#container:hover #lleg{
+    
+    animation: lleg 1s infinite;
+}
+@keyframes lleg{
+    0%{
+        transform:rotate(0deg);
+        transform-origin:top center ;
+        background: violet;
+    }
+    25%{
+        transform:rotate(-90deg);
+        transform-origin:top center ;
+        background: gray;
+        
+    }
+    50%{
+        transform:rotate(90deg);
+        transform-origin:top center ;
+        background: orange;
+        
+    }
+    75%{
+        transform:rotate(-90deg);
+        transform-origin:top center ;
+        background: yellow;
+    }
+    100%{
+        transform:rotate(90deg);
+        transform-origin:top center ;
+        background: hotpink;
+    }
+}
+#rleg{
+    height:75px;
+    width:25px;
+    background:green;
+    margin:auto;
+    border-bottom-left-radius:90% ;
+    border-bottom-right-radius:90% ;
+}
+#container:hover #rleg{
+    
+    animation: rleg 1s infinite;
+}
+@keyframes rleg{
+    0%{
+        transform:rotate(0deg);
+        transform-origin:top center ;
+        background: violet;
+    }
+    25%{
+        transform:rotate(-90deg);
+        transform-origin:top center ;
+        background: grey;
+        
+    }
+    50%{
+        transform:rotate(90deg);
+        transform-origin:top center ;
+        background: orange;
+        
+    }
+    75%{
+        transform:rotate(-90deg);
+        transform-origin:top center ;
+        background: yellow;
+    }
+    100%{
+        transform:rotate(0deg);
+        transform-origin:top center ;
+        background: hotpink;
+    }
+}
+
+body{
+    background:linear-gradient(violet,grey,orange,yellow,hotpink,green,blue);
+}
+h1{
+    color:green;
+}
+#container{
+    height:500px;
+    width:1100px;
+    border:5px solid orangered;
+    margin:auto;
+
+}
+#face{
+    height:140px;
+    width:150px;
+    background:green;
+    border-top-left-radius:-50%;
+    border-top-right-radius:-50% ;
+    margin:auto;
+    margin-top:3%;
+    transition:width 1s ease;
+}
+#container:hover #face{
+    
+    animation: face 2s infinite;
+}
+@keyframes face{
+    0%{
+        transform:translatey(50px);
+        background-color:violet;
+        
+    }
+    25%{
+        transform:translatey(-50px);
+        background-color:gray;
+        
+    }
+    50%{
+        transform:translatey(50px);
+        background-color:orange;
+        
+    }
+    75%{
+        transform:translatey(-50px);
+        background-color:yellow
+    }
+    100%{
+        transform:translatey(50px);
+        background-color:hotpink;
+    }
+}
+#eyes{
+    display:flex;
+    width:150px;
+    justify-content:space-evenly;
+    padding-top:90px;
+}
+#leye{
+    height:30px;
+    width:30px;
+    background:red;
+    border-radius:50%;
+}
+#reye{
+    height:30px;
+    width:30px;
+    background:red;
+    border-radius:50%;
+}
+#container:hover #reye{
+    animation:reye 2s infinite;
+}
+@keyframes reye{
+    0%{
+      height: 0px;
+      background:red;
+    }
+    25%{
+       height:30px;
+       background:red;
+    }
+    50%{
+     height: 0px;
+     background:red;
+    }
+    75%
+    {
+      height:30px;
+      background:red;
+    }
+    100%{
+      height:0px;
+      background:red;
+    }
+}
+#body{
+    display:flex;
+    width:200px;
+    justify-content:space-evenly ;
+    margin:auto;
+    
+}
+
+#lhand{
+    height:85px;
+    width:23px;
+    background:green ;
+    margin-top:13% ;
+    border-radius:30% ;
+}
+#center{
+    height:160px;
+    width:150px;
+    background:green;
+    margin:auto;
+    border-bottom-left-radius:30% ;
+    border-bottom-right-radius:30% ;
+    }
+    #container:hover #center{
+    
+        animation: center 2s infinite;
+    }
+    @keyframes center{
+        0%{
+            transform:circle(0deg);
+            background: violet;
+        }
+        25%{
+            transform:circle(360deg);
+            background: gray;
+        }
+        50%{
+            transform:circle(0deg);
+            background: orange;
+            
+        }
+        75%{
+            transform:circle(360deg);
+            background:yellow;
+        }
+        100%{
+            transform:circle(0deg);
+            background:hotpink;
+        }
+    }
+#rhand{
+    height:85px;
+    width:23px;
+    background:green ;
+    margin-top:13%;
+    border-radius:30% ;
+}
+#leg{
+    display:flex;
+    width:150px;
+    justify-content:space-evenly;
+    margin:auto;
+    margin-top:10px;
+}
+#lleg{
+    height:75px;
+    width:25px;
+    background:green;
+    margin:auto;
+    border-bottom-left-radius:30% ;
+    border-bottom-right-radius:30% ;
+    
+}
+#rleg{
+    height:75px;
+    width:25px;
+    background:linear-gradient(green);
+    margin:auto;
+    border-bottom-left-radius:30% ;
+    border-bottom-right-radius:30% ;
+}
+
